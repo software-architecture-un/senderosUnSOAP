@@ -15,7 +15,7 @@ class User
     end
 
     def self.get_user(id_user)
-        response = get("http://web:3001/users/#{id_user}")
+        response = get("http://10.128.0.4:3001/users/#{id_user}")
         if response.success?
             new(response)
         else
