@@ -15,7 +15,7 @@ class User
     end
 
     def self.get_user(id_user)
-        response = get("http://10.128.0.4:3001/users/#{id_user}")
+        response = get("http://34.67.242.29:3001/users/#{id_user}")
         if response.success?
             new(response)
         else
