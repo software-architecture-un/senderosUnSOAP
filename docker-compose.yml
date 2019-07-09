@@ -1,6 +1,6 @@
 version: '2'
 services:
-  senderos_un-soap:
+  senderos-un-soap:
     build: .
     command: bash -c "rails s -p 3005 -b '0.0.0.0'"
     ports:
