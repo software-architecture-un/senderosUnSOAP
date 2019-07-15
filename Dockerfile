@@ -9,3 +9,5 @@ ADD Gemfile.lock /senderos_un-soap/Gemfile.lock
 RUN bundle install
 
 ADD . /senderos_un-soap
+
+EXPOSE 3005
