@@ -10,7 +10,7 @@ class Place
     end
 
     def self.get_place(id_user)
-        response = get("http://35.224.121.94:5000/scoreserviceUsn/#{id_user}")
+        response = get("places-ms:5000/scoreserviceUsn/#{id_user}")
         if response.success?
             new(response)
         else
