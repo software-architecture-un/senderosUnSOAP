@@ -3,7 +3,7 @@ class Responsesoap
     attr_reader :count_files
 
     def initialize(userMail)
-        filesSOAP = Savon.client(wsdl: "http://35.237.206.16:2090/wsfiles/wsdl")
+        filesSOAP = Savon.client(wsdl: "http://34.73.18.31:2090/wsfiles/wsdl")
         mailMessage = { 'owner' => userMail }
         
         responseFiles = filesSOAP.call(:send_number, message:  mailMessage)
